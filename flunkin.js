@@ -23,7 +23,7 @@ const spamCount = 999250
 let realmCode = ''
 let userMessage = ''
 
-rl.question('Realm Code -', (code) => {
+rl.question('code of realm -', (code) => {
   realmCode = code.trim()
   rl.question('Message To Spam -', (msg) => {
     userMessage = msg.trim()
@@ -37,7 +37,7 @@ function logStatus(tag, msg) {
 }
 
 function startSpamming() {
-  logStatus('Bot joining',` Joining realm with the code of - ${realmCode}`)
+  logStatus('Bot joining',` Joining realm with code of - ${realmCode}`)
 
   const client = bedrock.createClient({
     username: 'Zijorh',
